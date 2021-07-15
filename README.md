@@ -16,4 +16,4 @@ git clone https://github.com/alsrb0504/mall_project.git
 
 > 1-3. 주의 할 점
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 절대 강제로 푸쉬하지 말 것!!
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 절대 강제로 푸쉬하지 말 것!! 충돌 처리 하고 push!!
