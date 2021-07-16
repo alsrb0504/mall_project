@@ -25,8 +25,8 @@ dotenv.config();
 
 app.use(morgan('dev')); 
 app.use(cookieparser(process.env.COOKIE_SECRET));
-app.use('/static', express.static('/views')); //  localhost/static을 url로 입력하면 views 폴더에 접근가능!
-app.use('/files',express.static('/public'));
+app.use('/static', express.static('views')); //  localhost/static을 url로 입력하면 views 폴더에 접근가능!
+app.use('/files',express.static('../public'));
 app.use(express.json());
 app.use(express.urlencoded({extended : true}));
 app.use(session({
