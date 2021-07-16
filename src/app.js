@@ -46,8 +46,8 @@ app.use((req, res, next) => {
     try{
         console.log(process.env.COOKIE_SECRET);
         next();
-    } catch (error) {
-        next(error);
+    } catch (err) {
+        next(err);
     }
 });
 
