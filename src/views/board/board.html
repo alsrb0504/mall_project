@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="http://localhost:3000/board/board.css">
+
+  <title>Board</title>
+</head>
+<body>
+  
+  <div class="container">
+    <ul class="slider">
+      <li class="slider__item">
+        <div class="image">
+          <img src="../../../public/images/main/pic01.jpg" alt="main_image">
+        </div>
+        <div class="text">
+          <h1>사과 이미지</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standardalso the leap into electronic typesetting,</p>
+        </div>
+      </li>
+      <li class="slider__item">
+        <div class="image">
+          <img src="/public/images/main/pic02.jpg" alt="main_image">
+        </div>
+        <div class="text">
+          <h1>사과 이미지</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standardalso the leap into electronic typesetting,</p>
+        </div>
+      </li>
+      <li class="slider__item">
+        <div class="image">
+          <img src="/public/images/main/pic03.jpg" alt="main_image">
+        </div>
+        <div class="text">
+          <h1>사과 이미지</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standardalso the leap into electronic typesetting,</p>
+        </div>
+      </li>
+    </ul>
+    <div class="btn_container">
+      <button class="btns selected"></button>
+      <button class="btns"></button>
+      <button class="btns"></button>
+    </div>
+  </div>
+
+
+  <!-- 게시판 -->
+  <div id="board_container">
+    <h1 id="board_title">문의 게시판</h1>
+    <div id="board">
+      <div id="board_header">
+        <span>제목</span>
+        <span>작성일</span>
+      </div>
+      <ul class="board_list">
+        <!-- javascript에서 처리. -->
+        <!-- <li class="list_item">
+          <a class="list_item_notice list_item_title" href="#">공지사항</a>
+          <span class="list_itme_date">2021-07-13</span>
+        </li>
+        <li class="list_item">
+          <a class="list_item_title" href="#">HTML에서 작성한 글 제목이 들어갑니다.</a>
+          <span class="list_itme_date">2021-07-15</span>
+        </li> -->
+      </ul>
+      <div id="board_footer">
+        <form id="search_form" action="#" method="get">
+          <input id="search_title" type="text" placeholder="검색...">
+          <input id="search_btn" type="submit" value="검색">
+        </form>
+        <button id="write_btn">글쓰기</button>
+      </div>
+    </div>
+    
+    <div id="write_board" class="invisible">
+      <form action="#" method="POST" id="write_form" name="write_form" accept-charset="utf-8">
+        <div class="form_title_container">
+          <label for="write_title">제목: </label>
+          <input 
+            type="text" 
+            id="write_title" 
+            name="write_title" 
+            placeholder="제목 입력"
+            autofocus 
+            required
+          >
+        </div>
+        <textarea name="write_content" id="write_content" placeholder="내용을 입력하세요."></textarea>
+        <div class="form_btns">
+          <input id="submit_btn" type="submit" value="등록">
+          <input id="cancel_btn" type="button" value="취소">
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="board.js" ></script>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+
+.invisible {
+  display: none;
+}
+
+.container {
+  height: 30rem;
+  width: 70%;
+  min-width: 40rem;
+  max-width: 65rem;
+  margin: auto;
+  overflow: hidden;
+
+  position: relative;
+
+  /* delete bg-color */
+  background-color: beige;
+}
+
+.slider {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 300%;
+  height: 100%;
+
+  transition: transform 0.5s;
+}
+
+.slider__item {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.slider__item .image {
+  height: 100%;
+  flex: 1 1 60%;
+}
+
+.slider__item .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider__item .text {
+  flex: 1 1 40%;
+  height: 100%;
+  width: 100px;
+}
+
+.slider__item .text h1 {
+  margin: 0;
+  width: 100%;
+}
+
+.btn_container {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.btns {
+  background-color: white;
+  border: 0;
+  height: 0.5rem;
+  width: 2rem;
+  font-size: 1.3rem;
+  transition: background-color 200ms;
+}
+
+.selected {
+  background-color: orange;
+}
+
+/* 게시판 */
+
+#board_title {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid black;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+#board_container {
+  background-color: beige;
+  padding: 1em 4em;
+  width: 70%;
+  margin: auto;
+}
+#board #board_header {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid lightgray;
+}
+
+#board #board_header span:first-child {
+  flex-basis: 80%;
+  color: pink;
+}
+
+#board #board_header span:last-child {
+  color: coral;
+  flex-basis: 20%;
+}
+
+#board ul {
+  /* list-style: decimal; */
+  margin-top: 0;
+  padding-left: 1rem;
+}
+
+#board ul .list_item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid lightgray;
+
+  font-size: 1.05rem;
+
+  display: flex;
+}
+
+#board ul .list_item .list_item_notice {
+  font-weight: bold;
+}
+
+#board ul .list_item .list_item_title {
+  flex-basis: 80%;
+  text-decoration: none;
+  color: black;
+
+  transition: color 100ms;
+}
+
+#board ul .list_item .list_item_title:hover {
+  color: coral;
+}
+
+#board ul .list_item .list_itme_date {
+  flex-basis: 20%;
+  text-align: center;
+}
+
+#board #board_footer {
+  display: flex;
+  justify-content: center;
+
+  padding: 1rem;
+  border-top: 2px solid black;
+
+  position: relative;
+}
+
+#board #board_footer #search_form input:first-child {
+  font-size: 1.1rem;
+  padding: 0.4rem 0.4rem;
+  /* outline: none; */
+  border-radius: 5px;
+  margin-right: 0.2rem;
+}
+#board #board_footer #search_form input:last-child {
+  font-size: 1.1rem;
+  padding: 0.5rem 0.6rem;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  background-color: orange;
+  cursor: pointer;
+}
+
+#board #board_footer #write_btn {
+  position: absolute;
+  top: 21.5%;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+
+  background-color: orange;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* 게시판 글쓰기 창 */
+#board_container #write_board {
+  padding: 1rem;
+}
+
+#board_container #write_board form {
+  display: flex;
+  flex-direction: column;
+}
+
+#board_container #write_board form .form_title_container {
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+}
+#board_container #write_board form .form_title_container label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.2rem 0;
+}
+#board_container #write_board form .form_title_container #write_title {
+  /* flex-basis: 90%; */
+  flex: 1;
+  font-size: 1.1rem;
+  padding: 0.2rem 0.4rem;
+  margin-left: 1rem;
+}
+
+#board_container #write_board form #write_content {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  padding: 1rem;
+  height: 10rem;
+}
+
+#board_container #write_board form .form_btns {
+  text-align: center;
+}
+
+#board_container #write_board form .form_btns #submit_btn,
+#board_container #write_board form .form_btns #cancel_btn {
+  padding: 0.4rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+}
+
+#board_container #write_board form .form_btns #submit_btn {
+  background-color: orange;
+  color: white;
+  border: 2px solid coral;
+}
+
+/* 반응형 */
+@media screen and (max-width: 780px) {
+  /* html {
+    font-size: 14.5px;
+  } */
+
+  .slider__item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .slider__item .image {
+    height: 80%;
+  }
+}
