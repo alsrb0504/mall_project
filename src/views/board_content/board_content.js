@@ -87,6 +87,12 @@ form_submit_btn.addEventListener('click', (event) =>{
 
   // 이후 fetch로 서버에 접근하여 db에 댓글 추가 후,
   // 다시 이 게시글의 댓글 내용을 받아와서 화면 업데이트.
+  // AJAX 써야할 듯.
+  // fetch('서버주소', {
+  //   method: 'POST',
+  //   body: 'form 내용',
+  // })
+  // form이 다 해주나?
 })
 
 
