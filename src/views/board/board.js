@@ -64,30 +64,35 @@ const board_notice = {
 const board_texts = [
   {
     id: 1,
+    user_id: 'user1',
     title: '첫 번째 문의글',
     createdAt: '2021-07-14',
     description: '첫 번째 문의글입니다..',
   },
   {
     id: 2,
+    user_id: 'user2',
     title: '두 번째 문의글입니다.',
     createdAt: '2021-07-15',
     description: '두 번째 문의글입니다..',
   },
   {
     id: 3,
+    user_id: 'user3',
     title: '3번째 문의글입니다.',
     createdAt: '2021-07-15',
     description: '세 번째..',
   },
   {
     id: 4,
+    user_id: 'user4',
     title: '4번째 문의글',
     createdAt: '2021-07-16',
     description: '44444..',
   },
   {
     id: 5,
+    user_id: 'user5',
     title: '5번째 마지막 문의글',
     createdAt: '2021-07-17',
     description: '55555...',
@@ -101,7 +106,7 @@ function board_render() {
   const notice_element = document.createElement('template');
   notice_element.innerHTML = `
     <li class="list_item">
-      <a class="list_item_title list_item_notice" href="#">${board_notice.title}</a>
+      <a class="list_item_title list_item_notice" href="../board_content/board_content.html">${board_notice.title}</a>
       <span class="list_itme_date">${board_notice.createdAt}</span>
     </li>
   `;
