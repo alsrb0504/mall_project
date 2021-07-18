@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+#board_container {
+  background-color: beige;
+  padding: 1em 4em;
+  width: 70%;
+  margin: auto;
+}
+
+#board_title {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid black;
+  margin: 0;
+  margin-top: 1rem;
+
+  cursor: pointer;
+}
+
+#board #board_header {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1rem;
+  border-bottom: 1px solid lightgray;
+}
+
+#board #board_header .content_title {
+  font-size: 1.25rem;
+}
+
+#board #board_header .content_date {
+  color: grey;
+}
+
+.content_description {
+  margin: 1rem 0;
+  padding: 1rem;
+  min-height: 10rem;
+  font-size: 1.05rem;
+
+  background-color: white;
+  border: 1px solid lightgrey;
+}
+
+.comments_container {
+  background-color: pink;
+  border-top: 1px solid lightgrey;
+  padding: 1rem;
+}
+
+.comments_container ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.comments_container ul .comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  line-height: 1.6rem;
+  padding: 0.6rem 1rem;
+  background-color: white;
+  border-bottom: 1px solid orange;
+}
+
+.comments_container ul .comment .info .writer {
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.comments_container ul .comment .info .write_date {
+  color: grey;
+}
+
+.comments_container ul .comment i {
+  background-color: pink;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  animation: transform 100ms;
+}
+
+.comments_container ul .comment i:hover {
+  transform: scale(1.05);
+}
+
+.comment_add_form {
+  background: cyan;
+  display: flex;
+  /* margin-top: 1rem; */
+  padding: 1rem;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+
+.comment_add_form input:first-child {
+  flex: 1;
+  padding: 0.3rem 0.5rem;
+  font-size: 1rem;
+}
+
+.comment_add_form input:last-child {
+  background-color: pink;
+  padding: 0.3rem 0.5rem;
+  margin-left: 1rem;
+
+  font-size: 1rem;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}

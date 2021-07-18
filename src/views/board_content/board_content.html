@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="http://localhost:3000/static/board_content/board_content.css">
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <title>Board_Content</title>
+</head>
+<body>
+  <h1>board_contents</h1>
+
+  <div id="board_container">
+    <h1 id="board_title">문의 게시판 (목록 돌아가기)</h1>
+    <div id="board">
+      <div id="board_header">
+        <span class="content_title">title js로 대체</span>
+        <span class="content_date"">작성일 js로 대체</span>
+      </div>
+      <p class="content_description">
+        <!-- 질문내용.... Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. -->
+      </p>
+
+      <div class="comments_container">
+        <ul class="comment_ul">
+          <!-- js 로 구현 -->
+          <!-- <li class="comment">
+            <div class="info">
+              <div class="writer">user1</div>
+              <div class="write_content">답변내용...</div>
+              <div class="write_date">2021-07-17</div>
+            </div>
+            <i class="fas fa-trash-alt"></i>
+          </li>
+          <li class="comment">
+            <div class="info">
+              <div class="writer">user1</div>
+              <div class="write_content">답변내용...</div>
+              <div class="write_date">2021-07-17</div>
+            </div>
+            <i class="fas fa-trash-alt"></i>
+          </li>
+          <li class="comment">
+            <div class="info">
+              <div class="writer">user1</div>
+              <div class="write_content">답변내용...</div>
+              <div class="write_date">2021-07-17</div>
+            </div>
+            <i class="fas fa-trash-alt"></i>
+          </li> -->
+        </ul>
+      </div>
+
+      <form class="comment_add_form" action="#" method="POST">
+        <input class="comment_content" type="text" placeholder="댓글을 남겨보세요">
+        <input class="submit_btn" type="submit" value="등록">
+      </form>
+    </div>
+  </div>
+
+  <script src="http://localhost:3000/static/board_content/board_content.js"></script>
+</body>
+</html>
